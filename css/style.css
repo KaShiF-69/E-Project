@@ -404,6 +404,7 @@
     left: 30px;
     text-align: center;
     background: rgba(255, 255, 255, .5);
+    background: rgba(211, 40, 40, 0.5);
     transition: .5s;
     z-index: 1;
 }

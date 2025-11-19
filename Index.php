@@ -14,7 +14,6 @@
     <?php include("Guest/service.php") ?>
     <?php include("Guest/pricing.php") ?>
     <?php include("Guest/gallery.php") ?>
-    <?php include("Guest/team.php") ?>
     <?php include("Guest/footer.php") ?>
 
 
