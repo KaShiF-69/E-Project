@@ -11,8 +11,8 @@
     <?php include("Guest/navbar.php") ?>
     <?php include("Guest/slider.php") ?>
     <?php include("Guest/about.php") ?>
-    <?php include("Guest/service.php") ?>
-    <?php include("Guest/pricing.php") ?>
+    <?php include("Guest/services.php") ?>
+    <?php// include("Guest/pricing.php") ?>
     <?php include("Guest/gallery.php") ?>
     <?php include("Guest/footer.php") ?>
 

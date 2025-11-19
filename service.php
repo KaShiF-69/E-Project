@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Price</title>
+    <title>Services</title>
     <?php include("Links/header_links.php") ?>
 </head>
 <body>
     <?php include("Guest/spinner.php") ?>
     <?php include("Guest/navbar.php") ?>
-    <?php include("Guest/price_banner.php") ?>
-    <?php include("Guest/pricing.php") ?>
-
-
+    <?php include("Guest/services_banner.php") ?>
+    <?php include("Guest/services.php") ?>
+    
+    
     <?php include("Guest/footer.php") ?>
 
 

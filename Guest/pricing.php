@@ -1,6 +1,10 @@
     <!-- Pricing Start -->
-    <div class="container-fluid price px-0 py-5">
+    <div class="container-fluid price px-0">
+        
         <div class="row g-0">
+            
+    
+
             <div class="col-md-6">
                 <div class="d-flex align-items-center h-100 bg-primary p-5">
                     <div class="wow fadeIn" data-wow-delay="0.3s">
@@ -24,52 +28,34 @@
                     </div>
                 </div>
             </div>
+            
             <div class="col-md-6">
                 <div class="h-100 bg-dark p-5">
+                    <?php
+                include('connect.php');
+                $query="select * from services";
+                $run=mysqli_query($conn,$query);
+                if(mysqli_num_rows($run)>0)
+                {
+                while($row=mysqli_fetch_array($run))
+                {
+            ?>
                     <div class="price-item mb-3 wow fadeIn" data-wow-delay="0.1s">
-                        <img class="img-fluid flex-shrink-0" src="img/price-1.jpg" alt="">
+                        <img class="img-fluid flex-shrink-0" src="PricingImg/<?php echo $row[4] ?>" alt="error">
                         <div class="text-end px-4">
-                            <h6 class="text-uppercase text-primary">Haircut</h6>
-                            <h3 class="text-white font-work-sans mb-0">$49</h3>
+                            <h6 class="text-uppercase text-primary"><?php echo $row['name'] ?></h6>
+                            <h3 class="text-white font-work-sans mb-0"><?php echo $row['price'] ?></h3>
                         </div>
                     </div>
-                    <div class="price-item mb-3 wow fadeIn" data-wow-delay="0.2s">
-                        <img class="img-fluid flex-shrink-0" src="img/price-2.jpg" alt="">
-                        <div class="text-end px-4">
-                            <h6 class="text-uppercase text-primary">Makeup</h6>
-                            <h3 class="text-white font-work-sans mb-0">$79</h3>
-                        </div>
-                    </div>
-                    <div class="price-item mb-3 wow fadeIn" data-wow-delay="0.3s">
-                        <img class="img-fluid flex-shrink-0" src="img/price-3.jpg" alt="">
-                        <div class="text-end px-4">
-                            <h6 class="text-uppercase text-primary">Manicure</h6>
-                            <h3 class="text-white font-work-sans mb-0">$59</h3>
-                        </div>
-                    </div>
-                    <div class="price-item mb-3 wow fadeIn" data-wow-delay="0.4s">
-                        <img class="img-fluid flex-shrink-0" src="img/price-4.jpg" alt="">
-                        <div class="text-end px-4">
-                            <h6 class="text-uppercase text-primary">Pedicure</h6>
-                            <h3 class="text-white font-work-sans mb-0">$49</h3>
-                        </div>
-                    </div>
-                    <div class="price-item mb-3 wow fadeIn" data-wow-delay="0.5s">
-                        <img class="img-fluid flex-shrink-0" src="img/price-5.jpg" alt="">
-                        <div class="text-end px-4">
-                            <h6 class="text-uppercase text-primary">Massage</h6>
-                            <h3 class="text-white font-work-sans mb-0">$39</h3>
-                        </div>
-                    </div>
-                    <div class="price-item mb-3 wow fadeIn" data-wow-delay="0.6s">
-                        <img class="img-fluid flex-shrink-0" src="img/price-6.jpg" alt="">
-                        <div class="text-end px-4">
-                            <h6 class="text-uppercase text-primary">Skin Care</h6>
-                            <h3 class="text-white font-work-sans mb-0">$99</h3>
-                        </div>
-                    </div>
+                    <?php
+                
+            }}
+                ?>
                 </div>
             </div>
+            
         </div>
+                
     </div>
+
     <!-- Pricing End -->

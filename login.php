@@ -4,9 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
-
   <link href="css/createaccount.css" rel="stylesheet">
-
   <?php include("Links/header_links.php") ?>
 </head>
 
