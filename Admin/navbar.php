@@ -46,11 +46,11 @@
                                         <div class="adomx-dropdown-menu dropdown-menu-user">
                                             <div class="head">
                                                 <h5 class="name"><a href="#">Admin</a></h5>
-                                                <a class="mail" href="#">Contact@IceCreamCenter.com</a>
+                                                <a class="mail" href="#">admin@gmail.com</a>
                                             </div>
                                             <div class="body">
                                                 <ul>
-                                                    <li><a href="#"><i class="zmdi zmdi-lock-open"></i>Logout</a></li>
+                                                    <li><a href="logout.php"><i class="zmdi zmdi-lock-open"></i>Logout</a></li>
                                                 </ul>
                                             </div>
                                         </div>

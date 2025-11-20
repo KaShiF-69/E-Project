@@ -6,38 +6,27 @@
                 <h1 class="mb-5">What Clients Say!</h1>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay="0.3s">
+
+    <?php
+        include('connect.php');
+        $query="select * from feedback";
+        $run=mysqli_query($conn,$query);
+        if(mysqli_num_rows($run)>0)
+        {
+            while($row=mysqli_fetch_array($run))
+            {
+    ?>
                 <div class="text-center bg-light p-4">
                     <i class="fa fa-quote-left fa-3x mb-3"></i>
-                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat
-                        ipsum et lorem et sit.</p>
-                    <img class="img-fluid mx-auto border p-1 mb-3" src="img/testimonial-1.jpg" alt="">
-                    <h4 class="mb-1">Client Name</h4>
-                    <span>Profession</span>
+                    <p><?php echo $row['message'] ?></p>
+                    <img class="img-fluid mx-auto border p-1 mb-3" src="ClientImg/<?php echo $row[4] ?>" alt="Img">
+                    <h4 class="mb-1"><?php echo $row['client_name'] ?></h4>
                 </div>
-                <div class="text-center bg-light p-4">
-                    <i class="fa fa-quote-left fa-3x mb-3"></i>
-                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat
-                        ipsum et lorem et sit.</p>
-                    <img class="img-fluid mx-auto border p-1 mb-3" src="img/testimonial-2.jpg" alt="">
-                    <h4 class="mb-1">Client Name</h4>
-                    <span>Profession</span>
-                </div>
-                <div class="text-center bg-light p-4">
-                    <i class="fa fa-quote-left fa-3x mb-3"></i>
-                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat
-                        ipsum et lorem et sit.</p>
-                    <img class="img-fluid mx-auto border p-1 mb-3" src="img/testimonial-3.jpg" alt="">
-                    <h4 class="mb-1">Client Name</h4>
-                    <span>Profession</span>
-                </div>
-                <div class="text-center bg-light p-4">
-                    <i class="fa fa-quote-left fa-3x mb-3"></i>
-                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat
-                        ipsum et lorem et sit.</p>
-                    <img class="img-fluid mx-auto border p-1 mb-3" src="img/testimonial-4.jpg" alt="">
-                    <h4 class="mb-1">Client Name</h4>
-                    <span>Profession</span>
-                </div>
+    <?php
+                
+            }
+        }
+    ?>
             </div>
         </div>
     </div>

@@ -1,0 +1,75 @@
+           <!-- Content Body Start -->
+        <div class="content-body">
+
+            <!-- Page Headings Start -->
+            <div class="row justify-content-between align-items-center mb-10">
+
+                <!-- Page Heading Start -->
+                <div class="col-12 col-lg-auto mb-20">
+                    <div class="page-heading">
+                        <h3> Contact <span>/ messages</span></h3>
+                    </div>
+                </div><!-- Page Heading End -->
+
+            </div><!-- Page Headings End -->
+
+            <div class="row">
+
+                <!--Order List Start-->
+                <div method="POST" class="col-12">
+                    <div class="table-responsive">
+                        <table class="table table-vertical-middle">
+                            <thead>
+                                <tr>
+                                    <th>Contact ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Subject</th>
+                                    <th>Message</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+
+    <?php
+        include('connect.php');
+        $query="select * from contact_us";
+        $run=mysqli_query($conn,$query);
+        if(mysqli_num_rows($run)>0)
+        {
+            while($row=mysqli_fetch_array($run))
+            {
+        
+    ?>
+
+                            <tbody>
+                                <tr>
+                                    <td><?php echo $row['contact_id'] ?></td>
+                                    <td><?php echo $row['name'] ?></td>
+                                    <td><?php echo $row['email'] ?></td>
+                                    <td><?php echo $row['subject'] ?></td>
+                                    <td><?php echo $row['message'] ?></td>
+                                    <td class="action h4">
+                                        <div class="table-action-buttons">
+                                            <a class="edit button button-box button-xs button-info" href="#">
+                                                <i class="zmdi zmdi-edit"></i>
+                                            </a>
+                                            <a class="delete button button-box button-xs button-danger" href="user-delete.php?user_id=<?php echo $row['contact_id']; ?>">
+                                                <i class="zmdi zmdi-delete"></i>
+                                            </a>
+                                                    
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+    <?php
+                
+        }}
+    ?>
+                        </table>
+                    </div>
+                </div>
+                <!--Order List End-->
+
+            </div>
+
+        </div><!-- Content Body End -->

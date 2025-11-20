@@ -7,7 +7,7 @@
                 <nav class="side-header-menu" id="side-header-menu">
                     <ul>
                         <li><a href="admindash.php"><i class="ti-home"></i> <span>Dashboard</span></a></li>
-                        <li class="has-sub-menu"><a href="#"><i class="ti-shopping-cart"></i>
+                        <li class="has-sub-menu"><a href="#"><i class="ti-cut"></i>
                                 <span>Elegance Salon</span></a>
                             <ul class="side-header-sub-menu">
                                 <li><a href="Admin/add-product.php"><span>Add Product</span></a></li>
@@ -17,7 +17,9 @@
                                 <li><a href="Admin/Book_order.php"><span>Book Orders</span></a></li>
                             </ul>
                         </li>
-                        <li><a href="Admin/users.php"><i class="zmdi zmdi-account"></i> <span>Users</span></a></li>
+                        <li><a href="users-view.php"><i class="zmdi zmdi-account"></i> <span>Users</span></a></li>
+                        <li><a href="contactform-view.php"><i class="zmdi ti-email"></i> <span>Contacts</span></a></li>
+                        <li><a href="reviews-view.php"><i class="zmdi ti-email"></i> <span>Reviews</span></a></li>
                     </ul>
                 </nav>
                
