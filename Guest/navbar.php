@@ -16,23 +16,14 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu bg-light mt-2">
-                            <!-- <a href="gallery.html" class="dropdown-item">Photo Gallery</a> -->
-                            <!-- <a href="blog.html" class="dropdown-item">Beauty Blog</a> -->
+                             <a href="contact.php" class="dropdown-item">Contact Us</a>
                             <a href="team.php" class="dropdown-item">Our Team</a>
                             <a href="reviews.php" class="dropdown-item">Reviews</a>
-                           
-                            <!-- <a href="404.html" class="dropdown-item">404 Page</a> -->
                         </div>
                     </div>
-                    <a href="contact.php" class="nav-item nav-link">Contact</a>
+                    <a href="appointment.php" class="nav-item nav-link">Book Now</a>
                     <a href="login.php" class="nav-item nav-link">Login</a>
-                     <!-- <a href="contact.html" class="nav-item nav-link">Register</a> -->
                 </div>
-                <!-- <div class="d-flex">
-                    <a class="btn btn-primary btn-sm-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-primary btn-sm-square me-3" href=""><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-primary btn-sm-square" href=""><i class="fab fa-linkedin-in"></i></a>
-                </div> -->
             </div>
         </nav>
     </div>

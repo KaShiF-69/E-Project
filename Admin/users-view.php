@@ -52,11 +52,20 @@
                                     <td><?php echo $row['role'] ?></td>
                                     <td class="action h4">
                                         <div class="table-action-buttons">
-                                            <a class="edit button button-box button-xs button-info" href="#">
+                                            <a class="edit button button-box button-xs button-info" 
+                                            href="user-edit.php?user_id=<?php echo $row['user_id']; ?>
+                                                                &name=<?php echo $row['name']; ?>
+                                                                &mail=<?php echo $row['email']; ?>
+                                                                &pass=<?php echo $row['password']; ?>
+                                                                &phone=<?php echo $row['phone']; ?>
+                                                                &role=<?php echo $row['role']; ?>
+                                                  ">
                                                 <i class="zmdi zmdi-edit"></i>
                                             </a>
-                                            <a class="delete button button-box button-xs button-danger" href="user-delete.php?user_id=<?php echo $row['user_id']; ?>">
-                                                <i class="zmdi zmdi-delete"></i>
+                                            <a class="delete button button-box button-xs button-danger"
+                                                href="Admin/user-delete.php?user_id=<?php echo $row['user_id']; ?>"
+                                                onclick="return confirm('Are you sure you want to delete this user?');">
+                                                    <i class="zmdi zmdi-delete"></i>
                                             </a>
                                                     
                                         </div>

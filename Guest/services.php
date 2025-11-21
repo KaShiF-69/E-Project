@@ -12,7 +12,7 @@
                         <h3 class="mb-3">Haircut</h3>
                         <p class="mb-3">Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo
                             et tempor eirmod magna dolore erat amet</p>
-                        <a class="btn btn-sm btn-primary text-uppercase" href="">Read More <i
+                        <a class="btn btn-sm btn-primary text-uppercase" href="">Book Now <i
                                 class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
@@ -22,7 +22,7 @@
                         <h3 class="mb-3">Makeup</h3>
                         <p class="mb-3">Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo
                             et tempor eirmod magna dolore erat amet</p>
-                        <a class="btn btn-sm btn-primary text-uppercase" href="">Read More <i
+                        <a class="btn btn-sm btn-primary text-uppercase" href="">Book Now <i
                                 class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                         <h3 class="mb-3">Manicure</h3>
                         <p class="mb-3">Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo
                             et tempor eirmod magna dolore erat amet</p>
-                        <a class="btn btn-sm btn-primary text-uppercase my-2" href="">Read More <i
+                        <a class="btn btn-sm btn-primary text-uppercase my-2" href="">Book Now <i
                                 class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                         <h3 class="mb-3">Pedicure</h3>
                         <p class="mb-3">Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo
                             et tempor eirmod magna dolore erat amet</p>
-                        <a class="btn btn-sm btn-primary text-uppercase" href="">Read More <i
+                        <a class="btn btn-sm btn-primary text-uppercase" href="">Book Now <i
                                 class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                         <h3 class="mb-3">Massage</h3>
                         <p class="mb-3">Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo
                             et tempor eirmod magna dolore erat amet</p>
-                        <a class="btn btn-sm btn-primary text-uppercase" href="">Read More <i
+                        <a class="btn btn-sm btn-primary text-uppercase" href="">Book Now <i
                                 class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                         <h3 class="mb-3">Skin Care</h3>
                         <p class="mb-3">Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo
                             et tempor eirmod magna dolore erat amet</p>
-                        <a class="btn btn-sm btn-primary text-uppercase" href="">Read More <i
+                        <a class="btn btn-sm btn-primary text-uppercase" href="">Book Now <i
                                 class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
