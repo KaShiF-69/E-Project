@@ -49,11 +49,12 @@
                                     <td><?php echo $row['subject'] ?></td>
                                     <td><?php echo $row['message'] ?></td>
                                     <td class="action h4">
-                                        <div class="table-action-buttons">
-                                            <a class="edit button button-box button-xs button-info" href="#">
+                                        <div class="table-action-buttons ">
+                                            <!-- <a class="edit button button-box button-xs button-info" href="#">
                                                 <i class="zmdi zmdi-edit"></i>
-                                            </a>
-                                            <a class="delete button button-box button-xs button-danger" href="user-delete.php?user_id=<?php echo $row['contact_id']; ?>">
+                                            </a> -->
+                                            <a class="delete button button-box button-xs button-danger" href="Admin/contact-delete.php?contact_id=<?php echo $row['contact_id']; ?>
+                                                " onclick="return confirm('Are you sure you want to delete this message?');">
                                                 <i class="zmdi zmdi-delete"></i>
                                             </a>
                                                     

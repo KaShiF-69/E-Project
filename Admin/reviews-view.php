@@ -48,12 +48,13 @@
                                     <td><img src="ClientImg/<?php echo $row[4] ?>" alt="Img"></td>
                                     <td class="action h4">
                                         <div class="table-action-buttons">
-                                            <a class="edit button button-box button-xs button-info" href="#">
+                                            <!-- <a class="edit button button-box button-xs button-info" href="#">
                                                 <i class="zmdi zmdi-edit"></i>
-                                            </a>
-                                            <a class="delete button button-box button-xs button-danger" href="user-delete.php?user_id=<?php echo $row['feedback_id']; ?>">
+                                            </a> -->
+                                            <a class="delete button button-box button-xs button-danger" href="Admin/review-delete.php?feedback_id=<?php echo $row['feedback_id']; ?>
+                                                " onclick="return confirm('Are you sure you want to delete this message?');">
                                                 <i class="zmdi zmdi-delete"></i>
-                                            </a>  
+                                            </a> 
                                         </div>
                                     </td>
                                 </tr>
