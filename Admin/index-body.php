@@ -1,117 +1,63 @@
-        <!-- Content Body Start -->
-        <div class="content-body">
+<?php include 'Query/admindash-count.php'; ?>
 
-            <!-- Page Headings Start -->
-            <div class="row justify-content-between align-items-center mb-10">
+<!-- Content Body Start -->
+<div class="content-body">
 
-                <!-- Page Heading Start -->
-                <div class="col-12 col-lg-auto mb-20">
-                    <div class="page-heading">
-                        <h3>Dashboard</h3>
-                    </div>
-                </div><!-- Page Heading End -->
+    <div class="row justify-content-between align-items-center mb-10">
+        <div class="col-12 col-lg-auto mb-20">
+            <div class="page-heading">
+                <h3>Dashboard</h3>
+            </div>
+        </div>
+    </div>
 
-                <!-- Page Button Group Start -->
-                    
+    <!-- Dashboard Stats -->
+    <div class="row">
 
-            </div><!-- Page Headings End -->
+        <!-- Total Users -->
+        <div class="col-xlg-3 col-md-6 col-12 mb-30">
+            <div class="top-report">
+                <div class="head"><h4>Total Users</h4></div>
+                <div class="content"><h2><?php echo $total_users; ?></h2></div>
+                <div class="footer">
+                    <div class="progess"><div class="progess-bar" style="width:80%;"></div></div>
+                </div>
+            </div>
+        </div>
 
-            <!-- Top Report Wrap Start -->
-            <div class="row">
-                <!-- Top Report Start -->
-                <div class="col-xlg-3 col-md-6 col-12 mb-30">
-                    <div class="top-report">
+        <!-- Total Staff -->
+        <div class="col-xlg-3 col-md-6 col-12 mb-30">
+            <div class="top-report">
+                <div class="head"><h4>Total Staff</h4></div>
+                <div class="content"><h2><?php echo $total_staff; ?></h2></div>
+                <div class="footer">
+                    <div class="progess"><div class="progess-bar" style="width:75%;"></div></div>
+                </div>
+            </div>
+        </div>
 
-                        <!-- Head -->
-                        <div class="head">
-                            <h4>Total Orders</h4>
-                        </div>
+        <!-- Total Reviews -->
+        <div class="col-xlg-3 col-md-6 col-12 mb-30">
+            <div class="top-report">
+                <div class="head"><h4>Total Reviews</h4></div>
+                <div class="content"><h2><?php echo $total_reviews; ?></h2></div>
+                <div class="footer">
+                    <div class="progess"><div class="progess-bar" style="width:70%;"></div></div>
+                </div>
+            </div>
+        </div>
 
-                        <!-- Content -->
-                        <div class="content">
-                            <h2>100,560.00</h2>
-                        </div>
+        <!-- Contact Form Filled -->
+        <div class="col-xlg-3 col-md-6 col-12 mb-30">
+            <div class="top-report">
+                <div class="head"><h4>Contact Forms Filled</h4></div>
+                <div class="content"><h2><?php echo $total_contacts; ?></h2></div>
+                <div class="footer">
+                    <div class="progess"><div class="progess-bar" style="width:65%;"></div></div>
+                </div>
+            </div>
+        </div>
 
-                        <!-- Footer -->
-                        <div class="footer">
-                            <div class="progess">
-                                <div class="progess-bar" style="width: 92%;"></div>
-                            </div>
-                        </div>
+    </div>
 
-                    </div>
-                </div><!-- Top Report End -->
-
-                <!-- Top Report Start -->
-                <div class="col-xlg-3 col-md-6 col-12 mb-30">
-                    <div class="top-report">
-
-                        <!-- Head -->
-                        <div class="head">
-                            <h4>Total Products</h4>
-                        </div>
-
-                        <!-- Content -->
-                        <div class="content">
-                            <h2>85,000.00</h2>
-                        </div>
-
-                        <!-- Footer -->
-                        <div class="footer">
-                            <div class="progess">
-                                <div class="progess-bar" style="width: 98%;"></div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div><!-- Top Report End -->
-
-                <!-- Top Report Start -->
-                <div class="col-xlg-3 col-md-6 col-12 mb-30">
-                    <div class="top-report">
-
-                        <!-- Head -->
-                        <div class="head">
-                            <h4>Total Teams</h4>
-                        </div>
-
-                        <!-- Content -->
-                        <div class="content">
-                            <h2>5,000.00</h2>
-                        </div>
-
-                        <!-- Footer -->
-                        <div class="footer">
-                            <div class="progess">
-                                <div class="progess-bar" style="width: 88%;"></div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div><!-- Top Report End -->
-
-                <!-- Top Report Start -->
-                <div class="col-xlg-3 col-md-6 col-12 mb-30">
-                    <div class="top-report">
-
-                        <!-- Head -->
-                        <div class="head">
-                            <h4>Total Players</h4>
-                        </div>
-
-                        <!-- Content -->
-                        <div class="content">
-                            <h2>3,000,000.00</h2>
-                        </div>
-
-                        <!-- Footer -->
-                        <div class="footer">
-                            <div class="progess">
-                                <div class="progess-bar" style="width: 76%;"></div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div><!-- Top Report End -->
-            </div><!-- Top Report Wrap End -->
-        </div><!-- Content Body End -->
+</div>

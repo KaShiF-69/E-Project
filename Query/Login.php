@@ -15,7 +15,7 @@
             echo "<script>window.location.href='admindash.php'</script>";
          }
          else if($data['role'] == "user"){
-            echo "<script>window.location.href='userdash.php'</script>";
+            echo "<script>window.location.href='index.php'</script>";
          }
          else{
             echo "<script>alert('Invalid Role')</script>";

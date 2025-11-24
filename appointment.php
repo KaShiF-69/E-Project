@@ -1,3 +1,21 @@
+<?php
+    include("connect.php");
+    if(isset($_POST['sub'])){
+        $name = $_POST['name'];
+        $email = $_POST['mail'];
+        $service = $_POST['service'];
+        $date = $_POST['date'];
+        $time = $_POST['time'];
+        $query="insert into appointments(name,email,service,date,time)values('$name','$email','$service','$date','$time')";
+        $run=mysqli_query($conn,$query);
+        if($run){
+            echo "<script>alert('Appointment Booked Successfully')</script>";
+        }else{
+            echo "<script>alert('Failed to Book Appointment')</script>";
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,23 +80,7 @@
 </body>
 </html>
 
-<?php
-    include("connect.php");
-    if(isset($_POST['sub'])){
-        $name = $_POST['name'];
-        $email = $_POST['mail'];
-        $service = $_POST['service'];
-        $date = $_POST['date'];
-        $time = $_POST['time'];
-        $query="insert into appointments(name,email,service,date,time)values('$name','$email','$service','$date','$time')";
-        $run=mysqli_query($conn,$query);
-        if($run){
-            echo "<script>alert('Appointment Booked Successfully')</script>";
-        }else{
-            echo "<script>alert('Failed to Book Appointment')</script>";
-        }
-    }
-?>
+
 
 
 

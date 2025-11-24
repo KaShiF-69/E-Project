@@ -9,7 +9,8 @@
         $query="insert into users(name,email,password,phone,role)values('$name','$email','$password','$phone','$role')";
         $run=mysqli_query($conn,$query);
         if($run){
-            echo "<script>alert('Data Inserted')</script>";
+            echo "<script>alert('Your Account Created Successfully!');
+            window.location.href='index.php';</script>";
         }else{
             echo "<script>alert('Data not Inserted')</script>";
         }

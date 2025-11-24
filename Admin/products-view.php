@@ -7,7 +7,7 @@
                 <!-- Page Heading Start -->
                 <div class="col-12 col-lg-auto mb-20">
                     <div class="page-heading">
-                        <h3> Contact <span>/ messages</span></h3>
+                        <h3> Products <span>/ View</span></h3>
                     </div>
                 </div><!-- Page Heading End -->
 
@@ -21,18 +21,19 @@
                         <table class="table table-vertical-middle">
                             <thead>
                                 <tr>
-                                    <th>Contact ID</th>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Subject</th>
-                                    <th>Message</th>
+                                    <th>Product ID</th>
+                                    <th>Product Name</th>
+                                    <th>Product Quantity</th>
+                                    <th>Product Reorder</th>
+                                    <th>Product Price</th>
+                                    <th>Product Image</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
 
     <?php
         include('connect.php');
-        $query="select * from contact_us order by contact_id desc";
+        $query="select * from inventory order by item_id desc;";
         $run=mysqli_query($conn,$query);
         if(mysqli_num_rows($run)>0)
         {
@@ -43,19 +44,23 @@
 
                             <tbody>
                                 <tr>
-                                    <td><?php echo $row['contact_id'] ?></td>
-                                    <td><?php echo $row['name'] ?></td>
-                                    <td><?php echo $row['email'] ?></td>
-                                    <td><?php echo $row['subject'] ?></td>
-                                    <td><?php echo $row['message'] ?></td>
+                                    <td><?php echo $row['item_id'] ?></td>
+                                    <td><?php echo $row['item_name'] ?></td>
+                                    <td><?php echo $row['quantity'] ?></td>
+                                    <td><?php echo $row['reorder_level'] ?></td>
+                                    <td><?php echo $row['cost_price'] ?></td>
+                                    <td><img src="ProductsImg/<?php echo $row[5] ?>" alt="Img"></td>
                                     <td class="action h4">
-                                        <div class="table-action-buttons ">
-                                            <!-- <a class="edit button button-box button-xs button-info" href="#">
+                                        <div class="table-action-buttons">
+                                            <a class="edit button button-box button-xs button-info" 
+                                            href="products-edit.php?item_id=<?php echo $row['item_id']; ?>">
                                                 <i class="zmdi zmdi-edit"></i>
-                                            </a> -->
-                                            <a class="delete button button-box button-xs button-danger" href="Admin/contact-delete.php?contact_id=<?php echo $row['contact_id']; ?>
-                                                " onclick="return confirm('Are you sure you want to delete this message?');">
-                                                <i class="zmdi zmdi-delete"></i>
+                                            </a>
+
+                                            <a class="delete button button-box button-xs button-danger"
+                                                href="Admin/product-delete.php?item_id=<?php echo $row['item_id']; ?>"
+                                                onclick="return confirm('Are you sure you want to delete this user?');">
+                                                    <i class="zmdi zmdi-delete"></i>
                                             </a>
                                                     
                                         </div>

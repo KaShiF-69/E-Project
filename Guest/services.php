@@ -6,17 +6,33 @@
                 <h1 class="mb-5">Explore Our Services</h1>
             </div>
             <div class="row g-4 g-md-0 text-center">
+
+    <?php
+        include('connect.php');
+        $query="select * from offers";
+        $run=mysqli_query($conn,$query);
+        if(mysqli_num_rows($run)>0)
+        {
+            while($row=mysqli_fetch_array($run))
+            {
+        
+    ?>
+
                 <div class="col-md-6 col-lg-4">
                     <div class="service-item h-100 p-4 border-bottom border-end wow fadeIn" data-wow-delay="0.1s">
-                        <img class="img-fluid" src="img/haircut.png" alt="">
-                        <h3 class="mb-3">Haircut</h3>
-                        <p class="mb-3">Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo
-                            et tempor eirmod magna dolore erat amet</p>
-                        <a class="btn btn-sm btn-primary text-uppercase" href="">Book Now <i
+                        <img class="img-fluid" src="img/haircut.png" alt="Icon">
+                        <h3 class="mb-3"><?php echo $row['offer_name'] ?></h3>
+                        <p class="mb-3"><?php echo $row['description'] ?></p>
+                        <a class="btn btn-sm btn-primary text-uppercase" href="appointment.php">Book Now <i
                                 class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+    <?php
+                
+            }
+        }
+    ?>
+                <!-- <div class="col-md-6 col-lg-4">
                     <div class="service-item h-100 p-4 border-bottom border-lg-end wow fadeIn" data-wow-delay="0.3s">
                         <img class="img-fluid" src="img/makeup.png" alt="">
                         <h3 class="mb-3">Makeup</h3>
@@ -66,8 +82,8 @@
                             et tempor eirmod magna dolore erat amet</p>
                         <a class="btn btn-sm btn-primary text-uppercase" href="">Book Now <i
                                 class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
+                    </div> 
+                </div>-->
             </div>
         </div>
     </div>

@@ -16,7 +16,8 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu bg-light mt-2">
-                             <a href="contact.php" class="dropdown-item">Contact Us</a>
+                            <a href="shop.php" class="dropdown-item">Shop</a>
+                            <a href="contact.php" class="dropdown-item">Contact Us</a>
                             <a href="team.php" class="dropdown-item">Our Team</a>
                             <a href="reviews.php" class="dropdown-item">Reviews</a>
                         </div>

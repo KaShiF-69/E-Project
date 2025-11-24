@@ -10,11 +10,11 @@
                         <li class="has-sub-menu"><a href="#"><i class="ti-cut"></i>
                                 <span>Elegance Salon</span></a>
                             <ul class="side-header-sub-menu">
-                                <li><a href="Admin/add-product.php"><span>Add Product</span></a></li>
-                                <li><a href="Admin/products.php"><span>Product</span></a></li>
+                                <li><a href="product-add.php"><span>Add Product</span></a></li>
+                                <li><a href="products-view.php"><span>View Products</span></a></li>
                                 <li><a href="staff-register.php"><span>Staff Register</span></a></li>
-                                <li><a href="Admin/order-list.php"><span>Orders</span></a></li>
-                                <li><a href="Admin/Book_order.php"><span>Book Orders</span></a></li>
+                                <!-- <li><a href="Admin/order-list.php"><span>Orders</span></a></li> -->
+                                <!-- <li><a href="Admin/Book_order.php"><span>Book Orders</span></a></li> -->
                             </ul>
                         </li>
                         <li><a href="users-view.php"><i class="zmdi zmdi-account"></i> <span>Users</span></a></li>

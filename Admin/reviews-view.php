@@ -31,7 +31,7 @@
 
     <?php
         include('connect.php');
-        $query="select * from feedback";
+        $query="select * from feedback order by feedback_id desc";
         $run=mysqli_query($conn,$query);
         if(mysqli_num_rows($run)>0)
         {

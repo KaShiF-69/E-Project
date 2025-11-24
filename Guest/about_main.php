@@ -36,7 +36,7 @@
                             </div>
                         </div>
                     </div>
-                    <a class="btn btn-primary text-uppercase px-5 py-3" href="">Read More</a>
+                    <!-- <a class="btn btn-primary text-uppercase px-5 py-3" href="">Read More</a> -->
                 </div>
             </div>
         </div>

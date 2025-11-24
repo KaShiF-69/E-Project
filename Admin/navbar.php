@@ -23,6 +23,11 @@
                                                 class="zmdi zmdi-menu"></i></button></div>
 
                                     <!--Header Search-->
+                                    <div style="margin-left:200px;" class="col-auto ">
+                                        <h3 style="font-family: Arial, Helvetica, sans-serif;" ><a class="text-decoration-none" href="index.php">Elegance Salon</a> 
+                                            <span><a class="text-primary text-decoration-none" href="admindash.php">Admin Panel</a></span>
+                                        </h3>
+                                    </div>
                                    
                                 </div>
                             </div><!-- Side Header Toggle & Search End -->

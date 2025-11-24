@@ -8,7 +8,7 @@
       $row=mysqli_num_rows($run);
       if($row>0){
         echo "<script>alert('Login Successful')</script>";
-        echo "<script>window.location.href='staff-dash.php'</script>";
+        echo "<script>window.location.href='admindash.php'</script>";
         }else{
           echo "<script>alert('Invalid Email or Password')</script>";
         }

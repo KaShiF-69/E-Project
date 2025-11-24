@@ -33,7 +33,7 @@
 
     <?php
         include('connect.php');
-        $query="select * from users";
+        $query="select * from users order by user_id desc";
         $run=mysqli_query($conn,$query);
         if(mysqli_num_rows($run)>0)
         {
