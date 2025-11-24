@@ -44,7 +44,9 @@
                         <img class="img-fluid flex-shrink-0" src="PricingImg/<?php echo $row[3] ?>" alt="error">
                         <div class="text-end px-4">
                             <h6 class="text-uppercase text-primary"><?php echo $row['offer_name'] ?></h6>
-                            <h3 class="text-white font-work-sans mb-0"><?php echo $row['price'] ?></h3>
+                            <h3 class="text-white font-work-sans mb-0"><?php echo $row['price'] ?>
+                                <span class="text-primary">rs</span>
+                            </h3>
                         </div>
                     </div>
                     <?php

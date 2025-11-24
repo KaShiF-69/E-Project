@@ -403,13 +403,12 @@
     bottom: 30px;
     left: 30px;
     text-align: center;
-    background: rgba(255, 255, 255, .5);
-    background: rgba(211, 40, 40, 0.5);
+    /* background: rgba(255, 255, 255, .5) !important; */
     transition: .5s;
     z-index: 1;
 }
 
-.team-item:hover .team-overlay {
+.team-item:hover  {
     background: rgba(255, 255, 255, .9);
 }
 

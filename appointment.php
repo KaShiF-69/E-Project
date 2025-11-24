@@ -1,21 +1,3 @@
-<?php
-    include("connect.php");
-    if(isset($_POST['sub'])){
-        $name = $_POST['name'];
-        $email = $_POST['mail'];
-        $service = $_POST['service'];
-        $date = $_POST['date'];
-        $time = $_POST['time'];
-        $query="insert into appointments(name,email,service,date,time)values('$name','$email','$service','$date','$time')";
-        $run=mysqli_query($conn,$query);
-        if($run){
-            echo "<script>alert('Appointment Booked Successfully')</script>";
-        }else{
-            echo "<script>alert('Failed to Book Appointment')</script>";
-        }
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,23 +30,23 @@
             <label for="phone" class="form-label">Services</label>
             <select name="service" class="form-select" aria-label="Default select example">
                 <option selected disabled>Choose a service</option>
-                <option value="1">Haircut</option>
-                <option value="2">Makeup</option>
-                <option value="3">Manicure</option>
-                <option value="4">Pedicure</option>
-                <option value="5">Massage</option>
-                <option value="6">Skin Care</option>
+                <option>Haircut</option>
+                <option>Makeup</option>
+                <option>Manicure</option>
+                <option>Pedicure</option>
+                <option>Massage</option>
+                <option>Skin Care</option>
             </select>
         </div>
 
         <div class="mb-3">
           <label for="date" class="form-label">Preferred Date</label>
-          <input type="date" class="form-control" name="date" id="date" >
+          <input type="date" class="form-control" name="date" id="date">
         </div>
 
         <div class="mb-3">
           <label for="time" class="form-label">Preferred Time</label>
-          <input type="time" class="form-control" name="time" >
+          <input type="time" class="form-control" name="time">
         </div>
 
         <button type="submit" name="sub" class="btn btn-custom">Book</button>
@@ -72,16 +54,12 @@
 
     </div>
   </section>
-    <!-- Footer -->
-      <?php include("Guest/footer.php") ?>
 
-    <?php include("Links/footer_links.php") ?>
+    <?php include("Query/appointment-book.php") ?>
+
+  <!-- Footer -->
+  <?php include("Guest/footer.php") ?>
+  <?php include("Links/footer_links.php") ?>
 
 </body>
 </html>
-
-
-
-
-
-

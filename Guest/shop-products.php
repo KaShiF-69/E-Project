@@ -18,7 +18,7 @@
                     <img src="ProductsImg/<?php echo $row[5] ?>" class="product-img" alt="Product">
                     <h5 class="product-title mt-3"><?php echo $row['item_name'] ?></h5>
                     <p class="product-price"><?php echo $row['cost_price'] ?>rs</p>
-                    <a class="btn btn-dark">Buy Now</a>
+                    <a class="btn btn-dark" href="">Buy Now</a>
                 </div>
             </div>
         <?php

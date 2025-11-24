@@ -12,6 +12,7 @@
                             <ul class="side-header-sub-menu">
                                 <li><a href="product-add.php"><span>Add Product</span></a></li>
                                 <li><a href="products-view.php"><span>View Products</span></a></li>
+                                <li><a href="appointment-view.php"><span>View Appointments</span></a></li>
                                 <li><a href="staff-register.php"><span>Staff Register</span></a></li>
                                 <!-- <li><a href="Admin/order-list.php"><span>Orders</span></a></li> -->
                                 <!-- <li><a href="Admin/Book_order.php"><span>Book Orders</span></a></li> -->

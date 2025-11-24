@@ -24,8 +24,8 @@
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
                     <div class="team-item position-relative overflow-hidden">
                         <img class="img-fluid w-100" src="TeamImg/<?php echo $row[2] ?>" alt="Img">
-                        <div class="team-overlay">
-                            <p class="text-primary mb-1"><?php echo $row['profession'] ?></p>
+                        <div class="team-overlay" style="background: rgba(255, 255, 255, .5) !important;">
+                            <p class="text-dark mb-1"><?php echo $row['profession'] ?></p>
                             <h4><?php echo $row['name'] ?></h4>
                         </div>
                     </div>

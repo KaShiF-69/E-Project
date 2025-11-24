@@ -25,7 +25,7 @@
                                     </div>
                                     <div class="px-3">
                                         <h5 class="text-primary mb-0">Mail Us</h5>
-                                        <p class="fs-5 text-dark mb-0">info@domain.com</p>
+                                        <p class="fs-5 text-dark mb-0">info@elegance.com</p>
                                     </div>
                                 </div>
                             </div>

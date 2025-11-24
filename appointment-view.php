@@ -1,4 +1,15 @@
-           <!-- Content Body Start -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Appointment</title>
+    <?php include("Admin/headerlink.php") ?>
+</head>
+<body>
+    <?php include("Admin/navbar.php") ?>
+    <?php include("Admin/sideheader.php") ?>
+                   <!-- Content Body Start -->
         <div class="content-body">
 
             <!-- Page Headings Start -->
@@ -7,7 +18,7 @@
                 <!-- Page Heading Start -->
                 <div class="col-12 col-lg-auto mb-20">
                     <div class="page-heading">
-                        <h3> Products <span>/ View</span></h3>
+                        <h3> Appointments <span>/ view</span></h3>
                     </div>
                 </div><!-- Page Heading End -->
 
@@ -21,19 +32,20 @@
                         <table class="table table-vertical-middle">
                             <thead>
                                 <tr>
-                                    <th>Product ID</th>
-                                    <th>Product Name</th>
-                                    <th>Product Quantity</th>
-                                    <th>Product Reorder</th>
-                                    <th>Product Price</th>
-                                    <th>Product Image</th>
+                                    <th>Appointment ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Service</th>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                    <th>Status</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
 
     <?php
         include('connect.php');
-        $query="select * from inventory order by item_id desc;";
+        $query="select * from appointments order by appointment_id desc";
         $run=mysqli_query($conn,$query);
         if(mysqli_num_rows($run)>0)
         {
@@ -44,21 +56,18 @@
 
                             <tbody>
                                 <tr>
-                                    <td><?php echo $row['item_id'] ?></td>
-                                    <td><?php echo $row['item_name'] ?></td>
-                                    <td><?php echo $row['quantity'] ?></td>
-                                    <td><?php echo $row['reorder_level'] ?></td>
-                                    <td><?php echo $row['cost_price'] ?></td>
-                                    <td><img src="ProductsImg/<?php echo $row[5] ?>" height="100" width="100" alt="Img"></td>
+                                    <td><?php echo $row['appointment_id'] ?></td>
+                                    <td><?php echo $row['name'] ?></td>
+                                    <td><?php echo $row['email'] ?></td>
+                                    <td><?php echo $row['service'] ?></td>
+                                    <td><?php echo $row['date'] ?></td>
+                                    <td><?php echo $row['time'] ?></td>
+                                    <td><?php echo $row['status'] ?></td>
                                     <td class="action h4">
                                         <div class="table-action-buttons">
-                                            <a class="edit button button-box button-xs button-info" 
-                                            href="products-edit.php?item_id=<?php echo $row['item_id']; ?>">
-                                                <i class="zmdi zmdi-edit"></i>
-                                            </a>
 
                                             <a class="delete button button-box button-xs button-danger"
-                                                href="Admin/product-delete.php?item_id=<?php echo $row['item_id']; ?>"
+                                                href="Admin/appointment-delete.php?appointment_id=<?php echo $row['appointment_id']; ?>"
                                                 onclick="return confirm('Are you sure you want to delete this user?');">
                                                     <i class="zmdi zmdi-delete"></i>
                                             </a>
@@ -79,3 +88,11 @@
             </div>
 
         </div><!-- Content Body End -->
+    <?php // include("Admin/appointment-view.php") ?>
+    <?php include("Admin/footer.php") ?>
+
+
+
+    <?php include("Admin/footerlinks.php") ?>
+</body>
+</html>
