@@ -7,9 +7,7 @@
   <link href="css/createaccount.css" rel="stylesheet">
   <?php include("Links/header_links.php") ?>
 </head>
-
 <body>
-
   <?php include("Guest/spinner.php") ?>
   <?php include("Guest/navbar.php") ?>
 
@@ -33,9 +31,7 @@
     </div>
   </section>
 
-
     <?php include("Links/footer_links.php") ?>
-
 </body>
 </html>
 

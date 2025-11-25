@@ -1,4 +1,4 @@
-           <!-- Content Body Start -->
+<!-- Content Body Start -->
         <div class="content-body">
 
             <!-- Page Headings Start -->
@@ -23,6 +23,7 @@
                                 <tr>
                                     <th>Product ID</th>
                                     <th>Product Name</th>
+                                    <th>Product Description</th>
                                     <th>Product Quantity</th>
                                     <th>Product Reorder</th>
                                     <th>Product Price</th>
@@ -32,8 +33,8 @@
                             </thead>
 
     <?php
-        include('connect.php');
-        $query="select * from inventory order by item_id desc;";
+        //include('connect.php');
+        $query="select * from inventory";
         $run=mysqli_query($conn,$query);
         if(mysqli_num_rows($run)>0)
         {
@@ -46,10 +47,12 @@
                                 <tr>
                                     <td><?php echo $row['item_id'] ?></td>
                                     <td><?php echo $row['item_name'] ?></td>
+                                    <td style="word-wrap: break-word;overflow-wrap: break-word; white-space: normal;">
+                                        <?php echo $row['item_description'] ?></td>
                                     <td><?php echo $row['quantity'] ?></td>
                                     <td><?php echo $row['reorder_level'] ?></td>
                                     <td><?php echo $row['cost_price'] ?></td>
-                                    <td><img src="ProductsImg/<?php echo $row[5] ?>" height="100" width="100" alt="Img"></td>
+                                    <td><img src="ProductsImg/<?php echo $row['item_img'] ?>" height="100" width="100" alt="Img"></td>
                                     <td class="action h4">
                                         <div class="table-action-buttons">
                                             <a class="edit button button-box button-xs button-info" 

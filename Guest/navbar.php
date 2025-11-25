@@ -32,14 +32,8 @@
     </nav>
 </div>
 
+
 <!-- ACTIVE LINK SCRIPT -->
-<script>
-    const currentPage = location.pathname.split("/").pop();
-    document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
-        if (link.getAttribute("href") === currentPage) {
-            link.classList.add("active");
-        }
-    });
-</script>
+<script src="js/nav-active.js"></script>
 
      

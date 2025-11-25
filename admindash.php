@@ -13,7 +13,6 @@
     <?php include("Admin/footer.php") ?>
 
 
-
     <?php include("Admin/footerlinks.php") ?>
 </body>
 </html>

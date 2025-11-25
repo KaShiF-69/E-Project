@@ -2,6 +2,7 @@
         include ('connect.php');
         if(isset($_POST['sub'])){
             $name=$_POST['name'];
+            $description=$_POST['description'];
             $quantity=$_POST['quantity'];
             $price=$_POST['price'];
 
@@ -12,8 +13,8 @@
             if(move_uploaded_file($tmpimage, $folder . $image)){
 
             
-            $query="INSERT INTO inventory (item_name, quantity, cost_price, item_img) 
-                    VALUES ('$name', '$quantity', '$price', '$image')";
+            $query="INSERT INTO inventory (item_name, item_description, quantity, cost_price, item_img) 
+                    VALUES ('$name', '$description', '$quantity', '$price', '$image')";
 
             $run=mysqli_query($conn,$query);
 

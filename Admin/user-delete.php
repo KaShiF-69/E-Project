@@ -1,5 +1,4 @@
 <?php
-
     include "connect.php";
     $id=$_GET['user_id'];
     $delete_query = "DELETE FROM users WHERE user_id='$id'";

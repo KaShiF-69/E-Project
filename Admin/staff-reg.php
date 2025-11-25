@@ -64,9 +64,6 @@
         $email=$_POST['mail'];
         $password=$_POST['pass'];
         
-        // $password=$_POST['pass'];
-        
-
         $image=$_FILES['image']['name'];
         $tmpimage=$_FILES['image']['tmp_name'];
         $folder="TeamImg/";

@@ -26,6 +26,12 @@
                             <input name="name" value="<?php echo $name; ?>" type="text" class="form-control">
                         </div>
 
+                        <!-- Product Description -->
+                        <div class="mb-3">
+                            <label class="form-label font-playfair-display">Product Description</label>
+                            <input name="description" value="<?php echo $description; ?>" type="text" class="form-control">
+                        </div>
+
                         <!-- Quantity -->
                         <div class="mb-3">
                             <label class="form-label font-playfair-display">Quantity</label>

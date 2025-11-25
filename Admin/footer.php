@@ -4,7 +4,7 @@
 
                 <div class="footer-copyright text-center">
                     <p class="text-body-light">2025 &copy; <a
-                            href="#">Elegance Salon</a></p>
+                            href="index.php">Elegance Salon</a></p>
                 </div>
 
             </div>

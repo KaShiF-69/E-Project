@@ -12,6 +12,7 @@ if (isset($_GET['item_id'])) {
         $row = mysqli_fetch_assoc($result);
 
         $name = $row['item_name'];
+        $description = $row['item_description'];
         $quantity = $row['quantity'];
         $reorder = $row['reorder_level'];
         $price = $row['cost_price'];
@@ -27,6 +28,7 @@ if (isset($_POST['update'])) {
 
     $id = $_POST['id'];
     $name = $_POST['name'];
+    $description = $_POST['description'];
     $quantity = $_POST['quantity'];
     $reorder = $_POST['reorder'];
     $price = $_POST['price'];
@@ -45,6 +47,7 @@ if (isset($_POST['update'])) {
 
     $update = "UPDATE inventory 
                SET item_name='$name', 
+                 item_description='$description',
                    quantity='$quantity', 
                    reorder_level='$reorder',
                    cost_price='$price', 

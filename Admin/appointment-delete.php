@@ -1,5 +1,4 @@
 <?php
-
     include "connect.php";
     $id=$_GET['appointment_id'];
     $delete_query = "DELETE FROM appointments WHERE appointment_id='$id'";

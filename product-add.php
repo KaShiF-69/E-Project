@@ -10,9 +10,7 @@
     <?php include("Admin/navbar.php") ?>
     <?php include("Admin/sideheader.php") ?>
     <?php include("Admin/product-add.php") ?>
-
     <?php include("Admin/footer.php") ?>
-
 
 
     <?php include("Admin/footerlinks.php") ?>

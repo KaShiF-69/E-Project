@@ -12,7 +12,6 @@
   <?php include("Guest/spinner.php") ?>
   <?php include("Guest/navbar.php") ?>
 
-  <!-- Create Account Section -->
   <section class="form-container">
     <div class="form-card">
       <h3>Create Your Account</h3>
@@ -45,8 +44,8 @@
       </p>
     </div>
   </section>
-    <!-- Footer -->
-      <?php include("Guest/footer.php") ?>
+
+    <?php include("Guest/footer.php") ?>
 
     <?php include("Links/footer_links.php") ?>
 

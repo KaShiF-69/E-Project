@@ -12,8 +12,6 @@
     <?php include("Guest/reviews_banner.php") ?>
     <?php include("Guest/reviews.php") ?>
     <?php include("Guest/footer.php") ?>
-
-
     
     <?php include("Links/footer_links.php") ?>
 </body>

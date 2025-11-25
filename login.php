@@ -7,13 +7,10 @@
   <link href="css/createaccount.css" rel="stylesheet">
   <?php include("Links/header_links.php") ?>
 </head>
-
 <body>
-
   <?php include("Guest/spinner.php") ?>
   <?php include("Guest/navbar.php") ?>
 
-  <!-- Create Account Section -->
   <section class="form-container">
     <div class="form-card">
       <h3>Login</h3>
@@ -43,21 +40,13 @@
 
     </div>
   </section>
-
-
-    <?php include("Links/footer_links.php") ?>
-
 </body>
 </html>
-
-
-  <!-- Footer -->
-    <?php include("Guest/footer.php") ?>
+  
+  <?php include("Guest/footer.php") ?>
 
 
   <?php include("Links/footer_links.php") ?>
-</body>
-</html>
 
 
 <?php include("Query/Login.php"); ?>

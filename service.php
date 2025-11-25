@@ -11,12 +11,7 @@
     <?php include("Guest/navbar.php") ?>
     <?php include("Guest/services_banner.php") ?>
     <?php include("Guest/services.php") ?>
-    
-    
     <?php include("Guest/footer.php") ?>
-
-
-
 
 
     <?php include("Links/footer_links.php") ?>

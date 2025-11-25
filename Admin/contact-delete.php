@@ -1,5 +1,4 @@
 <?php
-
     include "connect.php";
     $id=$_GET['contact_id'];
     $delete_query = "DELETE FROM contact_us WHERE contact_id='$id'";

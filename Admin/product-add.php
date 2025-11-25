@@ -25,14 +25,18 @@
                                     <input name="name" class="form-control" type="text" placeholder="Product Name / Title*">
                                 </div>
                                 <div class="col-lg-6 col-12 mb-30">
+                                    <input name="description" class="form-control" type="text" placeholder="Product Description*">
+                                </div>
+                                <div class="col-lg-6 col-12 mb-30">
                                     <input name="quantity" class="form-control" type="text" placeholder="Product quantity*">
                                 </div>
                                 <div class="col-lg-6 col-12 mb-30">
                                     <input name="price" class="form-control" type="text" placeholder="Product Price*">
                                 </div>
-                                <div class="col-lg-6 col-12 mb-30">
-                                    <input name="image" class="form-control" type="file" placeholder="Product Image*">
+                                <div class="col-lg-12 col-12 mb-30">
+                                    <input name="image" class="form-label form-control" type="file" placeholder="Product Image*">
                                 </div>
+                                
                             </div> 
 
                             <div class="row">

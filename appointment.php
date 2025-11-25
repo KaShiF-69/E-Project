@@ -7,7 +7,6 @@
   <link href="css/createaccount.css" rel="stylesheet">
   <?php include("Links/header_links.php") ?>
 </head>
-
 <body>
   <?php include("Guest/spinner.php") ?>
   <?php include("Guest/navbar.php") ?>
@@ -57,7 +56,6 @@
 
     <?php include("Query/appointment-book.php") ?>
 
-  <!-- Footer -->
   <?php include("Guest/footer.php") ?>
   <?php include("Links/footer_links.php") ?>
 

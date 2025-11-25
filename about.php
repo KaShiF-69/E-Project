@@ -12,13 +12,7 @@
     <?php include("Guest/about_banner.php") ?>
     <?php include("Guest/about_main.php") ?>
     <?php include("Guest/team_staff.php") ?>
-
-
-
     <?php include("Guest/footer.php") ?>
-
-
-
 
 
     <?php include("Links/footer_links.php") ?>

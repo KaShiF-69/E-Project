@@ -1,5 +1,5 @@
 <?php
-    include "connect.php";
+    include "../connect.php";
     $id=$_GET['item_id'];
     $delete_query = "DELETE FROM inventory WHERE item_id='$id'";
     $run=mysqli_query($conn,$delete_query);

@@ -16,9 +16,6 @@
     <?php include("Guest/footer.php") ?>
 
 
-
-
-
     <?php include("Links/footer_links.php") ?>
 </body>
 </html>
