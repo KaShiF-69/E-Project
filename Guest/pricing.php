@@ -18,8 +18,8 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Maecenas eget libero lobortis,
-                                    auctor nisi quis, aliquet nunc. Nam dapibus lacus.</p>
+                                <p>Enjoy 20% off our signature hair and beauty services — from precision haircuts to revitalising facials.
+                                    Treat yourself to professional care, premium products and personalised styling. Book now while this limited-time offer lasts.</p>
                                 <a class="btn btn-dark" href="">Get 20% Off</a>
                             </div>
                         </div>
